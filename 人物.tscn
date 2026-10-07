@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbauo5wm5yocd"]
+
+[ext_resource type="Script" uid="uid://4p337js6jljt" path="res://character_body_2d.gd" id="1_pqyr7"]
+[ext_resource type="Texture2D" uid="uid://b0fh3gngxaef7" path="res://kenney_simplified-platformer-pack/PNG/Characters/platformChar_idle.png" id="2_4rgxh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihk4x"]
+size = Vector2(53, 68)
+
+[node name="Node2D" type="Node2D" unique_id=1172021460]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1542236801]
+script = ExtResource("1_pqyr7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=449652933]
+position = Vector2(241, 190)
+texture = ExtResource("2_4rgxh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=246244240]
+position = Vector2(240.5, 206)
+shape = SubResource("RectangleShape2D_ihk4x")

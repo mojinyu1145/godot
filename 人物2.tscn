@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dwn3l2eiovc32"]
+
+[ext_resource type="Texture2D" uid="uid://b0fh3gngxaef7" path="res://kenney_simplified-platformer-pack/PNG/Characters/platformChar_idle.png" id="1_dvf46"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihk4x"]
+size = Vector2(26, 29)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=568427490]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1555990820]
+position = Vector2(-23.5, 27.5)
+scale = Vector2(0.5104167, 0.42708334)
+texture = ExtResource("1_dvf46")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1621376568]
+position = Vector2(-24, 34.5)
+shape = SubResource("RectangleShape2D_ihk4x")
